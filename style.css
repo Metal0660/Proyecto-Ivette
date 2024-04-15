@@ -1,0 +1,379 @@
+    /* Estilos para el navbar */
+nav {
+    background-color: white;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    margin: 0; 
+    font-family: "Allerta", sans-serif; 
+}
+
+.nav-left {
+    flex: 1;
+    text-align: left;
+    padding-left: 20px;
+}
+
+.nav-right {
+    flex: 1;
+    text-align: right;
+    padding-right: 20px;
+}
+
+nav a {
+    color: #48487f;
+    text-decoration: none;
+    padding: 5px 0; 
+    margin: 0 10px;
+    font-size: 16px;
+}
+
+nav a:hover {
+    background-color: #f0f0f0;
+}
+
+.nav-left a {
+    font-weight: bold;
+}
+    /* Estilos para el navbar - Fin */
+    
+    /*Pagina Index */
+.image-index {
+    width: 60%;
+    display: block;
+    margin: auto;
+    margin-top: 20px;
+  }
+
+.centered-text-index {
+    text-align: center;
+    margin-top: 10px;
+    font-family: "Allerta", sans-serif;
+}
+
+.testimonial-index {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Centramos horizontalmente el contenido */
+    text-align: center;
+}
+  
+.testimonial-index .stars {
+    color: gold;
+    font-size: 24px;
+    margin-right: 10px;
+}
+  
+.testimonial-index .star {
+    display: inline-block;
+}
+  
+.testimonial-index .testimonial-text {
+    margin-top: 10px;
+    font-size: 14px;
+    line-height: 1.5;
+    text-align: center; /* Alineamos el texto al centro */
+    text-align: justify; /* Texto justificado */
+    font-family: "Allerta", sans-serif; /* Fuente */
+    width: 60%;
+}
+  
+    /*Fin Pagina Index*/
+  
+    /*Pagina Sesion*/
+.container-inicio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+  
+.icon-inicio {
+    font-size: 96px;
+    margin-bottom: 20px;
+    color: #48487f;
+    font-family: "Allerta", sans-serif;
+}
+  
+.form-container-inicio {
+    width: 300px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-family: "Allerta", sans-serif;
+    text-align: center;
+}
+  
+.input-inicio {
+    width: calc(100% - 22px); /* Tamaño ajustado para tener en cuenta el relleno y el borde */
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-family: "Allerta", sans-serif;
+}
+  
+.button-inicio {
+    width: calc(100% - 22px); /* Tamaño ajustado para tener en cuenta el relleno y el borde */
+    padding: 10px;
+    background-color: #48487f; /* Restaurar el color del botón */
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: "Allerta", sans-serif;
+}
+  
+    /*Fin de Sesion*/
+
+    /*Admin*/
+/* Estilos básicos para la barra lateral */
+.sidebar {
+    height: calc(100% - 89px); /* Ajusta la altura para dejar espacio para el footer */
+    width: 260px;
+    margin-left: 7px;
+    position: fixed;
+    bottom: 0; /* Cambiado a bottom */
+    left: 0;
+    background-color: #ffffff; /* Fondo blanco */
+    padding-top: 20px;
+    overflow-x: hidden;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Sombras */
+    font-family: "Allerta", sans-serif;
+}
+
+
+/* Estilos para los elementos de la barra lateral */
+.sidebar a {
+    padding: 10px;
+    text-decoration: none;
+    color: #48487f; /* Color negro */
+    display: block;
+    font-size: 14px; /* Tamaño de letra más pequeño */
+}
+
+/* Estilos para el enlace de "Salir" */
+.sidebar a.logout {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+   
+/* Estilos para el formulario de paquetes */
+form {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    font-family: "Allerta", sans-serif; /* Aplicar el tipo de letra */
+    margin-top: 40px;
+}
+
+label {
+    font-weight: bold;
+}
+
+input[type="text"], textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-family: "Allerta", sans-serif; /* Aplicar el tipo de letra */
+}
+
+input[type="submit"] {
+    background-color: #48487f;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: "Allerta", sans-serif; /* Aplicar el tipo de letra */
+}
+
+input[type="submit"]:hover {
+    background-color: #48487f;
+}
+
+/* Eliminar */
+
+/* Eliminar */
+
+.contenedor-eliminar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh; /* Utilizamos el 70% de la altura de la ventana */
+}
+
+.eliminar {
+    border: 2px solid #48487f; /* Cambiamos el borde a un color similar a una sombra */
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+    font-family: "Allerta", sans-serif; /* Aplicar el tipo de letra */
+}
+
+.eliminar label {
+    font-family: "Allerta", sans-serif; /* Aplicar el tipo de letra */
+}
+
+.eliminar input[type="text"],
+.eliminar button {
+    font-family: "Allerta", sans-serif; /* Aplicar el tipo de letra */
+}
+
+.eliminar button {
+    background-color: #48487f; /* Cambiamos el color del botón */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: "Allerta", sans-serif; /* Aplicar el tipo de letra */
+}
+
+.eliminar button:hover {
+    background-color: #3a3a6d; /* Cambiamos el color del botón al pasar el cursor */
+}
+
+/*fin de eliminar*/
+
+    /*footer*/
+.footer-index {
+    text-align: center;
+    background-color: #ffffff;
+    padding: 20px 0;
+    position: relative; /* Cambiado a position: relative */
+    bottom: 0;
+    width: 100%;
+    z-index: 1; /* Footer delante de la barra lateral */
+}
+.footer-index p {
+    display: inline;
+    margin: 0 10px;
+}
+.footer-index a {
+    color: #000000; 
+    text-decoration: none;
+    font-size: 30px;
+}
+/*Fin de Footer*/
+
+/* Pedir Cotizacion*/
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  
+  .modal-content {
+    background-color: #fefefe;
+    padding: 20px;
+    border-radius: 10px;
+    width: 390px;
+    max-height: calc(100% - 40px);
+    overflow-y: auto;
+    margin: auto;
+    margin-top: 50vh; /* Ajustamos la posición */
+    transform: translateY(-50%);
+  }
+  
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  #formulario {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  label {
+    margin-bottom: 5px;
+  }
+  
+  #formulario input[type="text"],
+  #formulario input[type="tel"],
+  #formulario input[type="email"] {
+    width: 340px !important; /* Ancho ajustado */
+    height: 50px !important; /* Altura ajustada */
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-family: "Allerta", sans-serif;
+  }
+  
+  #descripcion {
+    width: 340px; /* Ancho ajustado */
+    height: 200px; /* Ajusta la altura del textarea */
+    padding: 10px; /* Ajusta el padding para el espacio dentro del campo */
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  button {
+    padding: 10px 20px;
+    background-color: #48487f;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-family: "Allerta", sans-serif;
+  }
+  
+  button:hover {
+    opacity: 0.8;
+  }
+  
+  body.modal-open {
+    overflow: hidden;
+    margin: 0;
+  }
+
+  .exito-mensaje {
+    display: none;
+    background-color: #d4edda;
+    color: #155724;
+    padding: 10px;
+    border: 1px solid #c3e6cb;
+    border-radius: 4px;
+    margin-top: 10px;
+  }
+  
+  .palomita {
+    color: #155724;
+    margin-right: 5px;
+  }
+  
+  
+  

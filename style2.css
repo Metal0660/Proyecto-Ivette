@@ -1,0 +1,27 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenedor-eliminar {
+    text-align: center;
+}
+
+.eliminar {
+    border: 2px solid red;
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+}
+
+button {
+    background-color: red;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
