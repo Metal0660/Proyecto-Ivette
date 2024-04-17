@@ -140,8 +140,8 @@ document.getElementById("formulario-paquetes").addEventListener("submit", enviar
 
 //Eliminar Paquetes
 
-function eliminarPaquete() {
-    var url = 'http://192.168.159.1/pepe/eliminar_paquete.php'; // URL del script PHP para eliminar el paquete
+/*function eliminarPaquete() {
+    var url = 'http://192.168.1.101/pepe/eliminar_paquete.php'; // URL del script PHP para eliminar el paquete
     var nombrePaquete = document.getElementById("nombre").value;
 
     // Validar que se haya ingresado un nombre de paquete
@@ -192,7 +192,7 @@ function eliminarPaquete() {
 
     // Retornar false para cancelar el evento de envío del formulario
     return false;
-}
+}*/
 
 function limpiarFormulario() {
     document.getElementById("nombre").value = ''; // Limpiar el campo de nombre del paquete
