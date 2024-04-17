@@ -47,7 +47,10 @@
         </div>
         <label for="descripcion">Descripción:</label>
         <textarea id="descripcion" name="descripcion" rows="10" cols="50" placeholder="Escribe aquí tu mensaje" required></textarea>
+        <label for="fecha">Fecha:</label>
+        <input type="date" id="fecha" name="fecha" min="<?php echo date('Y-m-d'); ?>" required>
         <button type="submit">Enviar</button>
+
       </form>
     </div>
   </div>

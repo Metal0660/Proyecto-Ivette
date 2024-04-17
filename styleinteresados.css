@@ -1,0 +1,86 @@
+<style>
+    /* Estilos para el contenedor de la tabla de consultas */
+    .container {
+        margin-left: 280px; /* Ajusta el margen izquierdo para dejar espacio para el sidebar */
+        margin-bottom: 20px; /* Agrega un margen inferior para separar del footer */
+    }
+
+    /* Estilos para la tabla de consultas */
+    .consulta-table {
+        border-collapse: collapse;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 70vh; /* Utilizamos el 70% de la altura de la ventana */
+        margin-top: 20px; /* Ajuste para evitar que interfiera con otros elementos */
+    }
+
+    .consulta-table th,
+    .consulta-table td {
+        border: 1px solid #ddd;
+        padding: 10px;
+        text-align: left;
+        transition: background-color 0.3s; /* Transición de color de fondo */
+    }
+
+    .consulta-table th:hover,
+    .consulta-table td:hover {
+        background-color: #f2f2f2; /* Color de fondo al pasar el mouse */
+    }
+
+    .consulta-table th {
+        background-color: rgb(118, 163, 199); /* Azul fuerte */
+        color: white; /* Letras blancas */
+    }
+
+    /* Estilos para el botón de exportar a Excel */
+    .export-button {
+        margin-top: 20px; /* Espacio entre la tabla y el botón */
+        text-align: center; /* Centrar el botón */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* Estilos para la paginación */
+    .pagination {
+        margin-top: 20px;
+        margin-bottom: 20px; /* Agrega margen inferior */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 70vh; /* Utilizamos el 70% de la altura de la ventana */
+    }
+
+    .page-link {
+        padding: 8px 16px;
+        text-decoration: none;
+        color: black;
+        background-color: #f2f2f2;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    .page-link:hover {
+        background-color: #ddd;
+    }
+
+    .active {
+        background-color: blue;
+        color: white;
+    }
+
+    /* Estilos para el menú de navegación */
+    .nav-left {
+        flex: 1;
+        text-align: left;
+        padding-left: 20px;
+    }
+
+    .nav-right {
+        flex: 1;
+        text-align: right;
+        padding-right: 20px;
+    }
+</style>

@@ -11,8 +11,11 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css" rel="stylesheet">
     <!-- Estilos personalizados -->
     <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="styleinteresados.css">
+    <link rel="stylesheet" type="text/css" href="interesados.php">
 </head>
 <body>
+    <?php include 'modelo_interesados.php'; ?>
 
 <!-- Etiqueta para el navbar -->
     <nav>
@@ -33,8 +36,45 @@
     <a href="agregar.html">Agregar Paquetes</a>
     <a href="eliminar.html">Eliminar Paquetes</a>
     <a href="index.html" class="logout">Salir</a>
-  </div>
-  <!-- Script de JavaScript -->
-  <script src="script.js"></script>
+</div>
+
+
+<!-- Contenedor para la tabla de consultas -->
+<div class="container">
+    <table class="consulta-table">
+        <tr>
+            <th><a href="?sort=nombre">Nombre</a></th>
+            <th><a href="?sort=correo_electronico">Correo electrónico</a></th>
+            <th><a href="?sort=fecha">Fecha</a></th>
+            <th><a href="?sort=numero_telefonico">Número telefónico</a></th>
+            <th><a href="?sort=descripcion">Descripción</a></th>
+        </tr>
+    </tr>
+
+</table>
+</div>
+<!--
+//<div class="pagination">
+    //<?php
+    // Mostrar enlaces de paginación
+    // for ($i = 1; $i <= $total_pages; $i++) {
+    //     echo "<a href='?page=$i' class='page-link";
+    //     if ($i == $page) {
+    //         echo " active";
+    //     }
+    //     echo "'>$i</a>";
+    // }
+    ?>
+//</div>
+-->
+
+<!-- Botón de exportación -->
+<form action="export_excel.php" method="post">
+    <button type="submit" name="export_excel">Exportar a Excel</button>
+</form>
+
+<!-- Script de JavaScript -->
+<script src="script.js"></script>
 </body>
 </html>
+
